@@ -1,0 +1,7 @@
+class DownloadController < ApplicationController
+	def download
+  		send_data pdf,
+    	:filename => "Ettinger_Project_Portfolio.pdf",
+    	:type => "application/pdf"
+	end
+end
